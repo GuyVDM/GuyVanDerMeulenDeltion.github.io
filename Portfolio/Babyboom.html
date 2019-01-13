@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+</style>
+<title>Portfolio Guy van der Meulen</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+
+      <p class= "family">Guy van der Meulen Portfolio</p>
+    </div>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Search:</legend>
+      </fieldset>
+    </form>
+    <nav>
+      <ul>
+        <li><a href="Blackfired.html">Project Blackfired</a></li>
+        <li><a href="Smackroom.html">Smack Room</a></li>
+        <li><a href="Babyboom.html">Baby Boom</a></li>
+		<li><a href="https://github.com/GuyVanDerMeulenDeltion">My github</a></li>
+		<li><a href="index.html">Homepage</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <!-- main content -->
+    <div id="intro">
+      <section class="clear">
+        <!-- article 1 -->
+          <p class= "title">Baby-Boom</p>
+
+    </div>
+
+</div>
+	    <!-- article 2 -->
+    <class= "imageBorderSmallBabyBoom"><img src="images/Baby_Boom.gif" alt="animated" class="imageBorderSmallBabyBoom"</p>
+    <hr>
+    <p class= "text"><b>Tools used:</b></p>
+    <p class= "text">- Unity</p>
+    <p class= "text">- Visual Studio Code</p>
+    <p class= "text">- Cinemachine Unity Package</p>
+    <p class= "text">- Textmesh Pro</p>
+    <br></br>
+    <p class= "text"><b>What i worked on this project:</b></p>
+    <p class= "text">- Player Controller & Mechanim</p>
+    <p class= "text">- Dialogue System</p>
+    <p class= "text">- Sound Implementation</p>
+    <p class= "text">- Cutscenes</p>
+    <p class= "text">- Quests</p>
+    <p class= "text">- AI</p>
+    <p class= "text">- All UI (With exception to the title screen and cosmetics)</p>
+    <hr>
+		<p class= "text">This is <b>"Project Baby-Boom"</b>, this has been my second project. In this project i had the role of <b>Lead Developer</b>.</p>
+		<p class= "text">This project is a <b>Third-Person Platformer</b> inspired by games like <b>Donkey Kong 64</b> and <b>Mario 64</b>.</p>
+		<p class= "text">This kind of project is something that was a bit more familiar with the direction i was going with,</p>
+		<p class= "text">and with the timespan of <b>7 weeks</b> on my and our team's hands we decided to start with the project right of the bat.</p>
+    <p class= "text">The game is about a baby that lives in a world full of candy, with the goal to achieve the <b>Golden Rattle</b>.</p>
+    <p class= "text">This specific game would feature diverse game mechanics that were yet to be explored by me, like: <b>Quests, and a Dialogue system.</b></p>
+    <p class= "text">And so the project starts.</p>
+		<class= "SnippedBoom"><img src="images/Baby_Boom_Snipped_001.png" class="SnippedBoom_001"</p>
+		<p class= "text">So the first mechanic that i wanted to tackle were <b>Quests</b>.</p>
+		<p class= "text">The goal was to make this as modulair as it could be, so i could create quests within a short time span.</p>
+    <p class= "text">The way i build the template was with 3 core functions: <b>A function that would start the quest, one that would check the current status, and a reward function.</b></p>
+    <p class= "text">Since the intent were to make different type of quests, we applied inheritance to it in the case we had extra time to make more types of quests.</p>
+    <p class= "text">In the end we rolled with a type of collectable quest that checked if enough of a specific type of action has been performed, or if the player had enough collectables.</p>
+    <class= "SnippedBoom"><img src="images/Baby_Boom_Snipped_002.png" class="SnippedBoom_002"</p>
+    <p class= "text">And no quest is a quest without a reward, so we created a function that would reward the player with some <b>candy</b> once the quest has been completed.</p>
+		<hr>
+		<p></p>
+		<!-- article 3 -->
+		<p class= "text">Furthermore we got the <b>Dialogue System</b>.</p>
+		<p class= "text">Since we wanted to give the NPC's characteristics, and we wanted the quests objective to be explained, i decided to create a <b>Dialogue System</b>.</p>
+    <p class= "text">This system has been build up really simple, what this system does is basically add a letter to the text UI with an interval of a float that's set beforehand.</p>
+    <p class= "text">And whenever the system saw there were no other characters to be added to the string, it would wait for the player to continue to the next one until there is no more dialogue to be shown.</p>
+    <p class= "text">After that, the script will cut off and the player would be able to move again.</p>
+		<class= "Gifboom"><img src="images/Baby_Boom_002.gif" alt="animated" class="GifBoom"</p>
+		<p class= "text">With addition i made the dialogue system in a way so possible functions could be activated after the dialogue if needed.</p>
+		<p class= "text">We used scriptable objects to store diverse functions in a list made out of UnityEvents, and in the scriptable object was one function that would <b>invoke</b> all other stored functions.</p>
+		<hr>
+		<p></p>
+    <p class= "text"><a href="https://imgur.com/a/hBmI79U">Picture Gallery</a>||<a href="https://github.com/HanHakkenberg/Nexto-Projecto/tree/master/Nexto%20Projecto/Assets/Individual%20work/Coen%20WIP/Scripts">My scripts folder</a></p>
+
+
+
+
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Guy van der Meulen</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+</body>
+</html>

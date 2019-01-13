@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+</style>
+<title>Portfolio Guy van der Meulen</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+
+      <p class= "family">Guy van der Meulen Portfolio</p>
+    </div>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Search:</legend>
+      </fieldset>
+    </form>
+    <nav>
+      <ul>
+        <li><a href="Blackfired.html">Project Blackfired</a></li>
+        <li><a href="Smackroom.html">Smack Room</a></li>
+        <li><a href="Babyboom.html">Baby Boom</a></li>
+		<li><a href="https://github.com/GuyVanDerMeulenDeltion">My github</a></li>
+		<li><a href="index.html">Homepage</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <!-- main content -->
+    <div id="intro">
+      <section class="clear">
+        <!-- article 1 -->
+          <p class= "title">Smack Room</p>
+
+    </div>
+
+
+
+</div>
+      <!-- article 2 -->
+      
+    <class= "imageBorderSmall"><img src="images/Progress.png" class="imageBorderSmall"</p>
+    <hr>
+    <p class= "text"><b>Tools used:</b></p>
+    <p class= "text">- Unity</p>
+    <p class= "text">- Photon PUN</p>
+    <p class= "text">- SteamVR Unity Package</p>
+    <p class= "text">- Textmesh Pro</p>
+    <br></br>
+    <p class= "text"><b>What i worked on this project:</b></p>
+    <p class= "text">- Networking</p>
+    <p class= "text">- Enemies</p>
+    <p class= "text">- Movement</p>
+    <p class= "text">- UI_Animations</p>
+    <hr>
+    <p class= "text">This is <b>"Project Smackroom"</b> and this is my second look into VR development, and this time with online multiplayer.</p>
+    <p class= "text">In this project i had the role of <b>Lead Developer</b>.</p>
+		<p class= "text">This project is a <b>VR Dungeon Crawler</b>, and with this game the goal is to defeat enemies and navigate through the level to find the end.</p>
+		<p class= "text">This project has also been my second time working with <b>Networking</b>, and this seemed as a game that would be alot of fun to play with others.</p>
+		<p class= "text">Since i would be using a networking package, i needed to change my workflow up a bit so the events would be sustained and recreated by all the other clients.</p>
+		<p class= "text">With this type of workflow, i would need a function for every event that needed to happen over the network, and thus needed to be <b>synced</b> across all other clients that are joined.</p>
+		<class= "SnippedSmack_001"><img src="images/Snippet_Smack_Room_001.png" class="SnippedSmack_001"</p>
+		<p class= "text">The first major thing i wanted to program so it would function across the network, were enemies.</p>
+		<p class= "text">This would be one of the most challenging things to program with the reasons that stuff like <b>Animations, and UI</b> needed to be synced.</p>
+    <p class= "text">In the picture shown <b>above</b>, you'll see the <b>EnemyManager</b>, and this manager would handle any action that were to be performed by the enemy,</p>
+    <p class= "text">and would send it over the <b>Network</b> across to all the other linked clients.</p>
+		<hr>
+		<p></p>
+    <!-- article 3 -->
+    <class= "imageBorder"><img src="images/Snippet_Smack_Room_002.png" class="imageBorder"</p>
+		<p class= "text">Networking also brought with itself, alot of think work about how to locally indentify and handle your character instance, without obstructing other players that may have joined.</p>
+		<p class= "text">Considering our players would needed to be spawned in over the network, and do multiple checks across diverse components to check if it truly is yours to control.</p>
+		<p class= "text">So what i did was store every component a player would need into a local <b>Player Manager</b>, and make it so that once the player had spawned,</p>
+		<p class= "text">that it'd check if the player that spawned in was truly from your client only, after it'd been indentified as your player, it would turn all the components on, and the player would be yours to control.</p>
+    <br></br>
+    <p class= "text">As of today, this project is still <b>Work in Progress</b>.</p>
+		<hr>
+		<p></p>
+    <p class= "text"><a href="https://imgur.com/a/wGVi48l">Picture Gallery</a>||<a href="https://github.com/GuyVanDerMeulenDeltion/J3P2_VR/tree/master/New%20project%20folder/Y3P2%20VR/Assets/Individual/Guy">My scripts folder</a></p>
+
+
+
+
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Guy van der Meulen</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+</body>
+</html>
