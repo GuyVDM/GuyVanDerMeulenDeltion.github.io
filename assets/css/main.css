@@ -1752,6 +1752,13 @@ ul.icons {
         border: 2px solid #8f8f8f;
       }
 
+      
+      .centerSmall {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+      }
+
       .leftSmall {
         display: block;
         position: left;
