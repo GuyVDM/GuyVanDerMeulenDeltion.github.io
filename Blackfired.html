@@ -1,102 +1,115 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-</style>
-<title>Portfolio Guy van der Meulen</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="styles/layout.css" type="text/css">
-<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
-</head>
-<body>
-<div class="wrapper row1">
-  <header id="header" class="clear">
-    <div id="hgroup">
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Guy van der Meulen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-      <p class= "family">Guy van der Meulen Portfolio</p>
-    </div>
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Search:</legend>
-      </fieldset>
-    </form>
-    <nav>
-      <ul>
-        <li><a href="Blackfired.html">Project Blackfired</a></li>
-        <li><a href="Smackroom.html">Smack Room</a></li>
-        <li><a href="Babyboom.html">Baby Boom</a></li>
-		<li><a href="https://github.com/GuyVanDerMeulenDeltion">My github</a></li>
-		<li><a href="index.html">Homepage</a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
-<!-- content -->
-<div class="wrapper row2">
-  <div id="container" class="clear">
-    <!-- Slider -->
-    <!-- main content -->
-    <div id="intro">
-      <section class="clear">
-        <!-- article 1 -->
-          <p class= "title">Project-Blackfired</p>
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Portfolio Guy van der Meulen</a>
+				<nav>
+					<a href="#menu">Projects</a>
+				</nav>
+			</header>
 
-    </div>
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="babyboom.html">Project-Babyboom</a></li>
+						<li><a href="smackroom.html">Project-Smackroom</a></li>
+				</ul>
+			</nav>
 
+		<!-- Heading -->
+			<div id="heading" >
+				<h1><b>- Blackfired -</b></h1>
+			</div>
 
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+						<h2>Concept:</h2>
+						</header>
+						<p>This is Project-Blackfired, it's an <b>VR Escape Room</b> based in an Office setting. The game is about a character who is an ex-employee from a tech company, the story follows as the character has been fired for unfair reasons by his boss, the player finds his way back into the office one day to steal some important documents to blackmail his ex-employer, but little did they know that it was a honeypod all along, and thus the player quickly needs to find a way to escape the building.</p>
+						<br>
+						<img src="images/blackfired_001.jpg" class="leftSmall" width="400px"; top= "200px";/>
+						</br>
+						<header>
+						<br>
+						<h2>What I have done:</h2>
 
-</div>
-      <!-- article 2 -->
-      
-    <class= "imageBorderSmall"><img src="images/Blackfire_001.jpg" class="imageBorderSmall"</p>
-    <hr>
-    <p class= "text"><b>Tools used:</b></p>
-    <p class= "text">- Unity</p>
-    <p class= "text">- Visual Studio Code</p>
-    <p class= "text">- SteamVR Unity Package</p>
-    <p class= "text">- Textmesh Pro</p>
-    <br></br>
-    <p class= "text"><b>What i worked on this project:</b></p>
-    <p class= "text">- Interaction</p>
-    <p class= "text">- Tutorial</p>
-    <p class= "text">- Sound</p>
-    <p class= "text">- Movement</p>
-    <p class= "text">- Unity Animations</p>
-    <p class= "text">- Puzzles</p>
-    <hr>
-		<p class= "text">This is <b>"Project Blackfired"</b> and has been my first look into VR development, in this project i had the role of <b>Lead Developer</b>.</p>
-		<p class= "text">This project is a <b>VR Escape Room project</b>, with this projects goal to explore throughout the level, do puzzles, progress, and reach the end as fast as possible.</p>
-		<p class= "text">Ofcourse at the start of such a project where you have no insight about what to do you start to look into the basics,</p>
-		<p class= "text">and i quickly found out that the best approach to a workflow was to build things that were very modulair and easy to use.</p>
-		<p class= "text">But luckily enough for me, was the fact that VR development and the approach that was needed wasn't very alien to me.</p>
-		<class= "imageBorder"><img src="images/Snippet_Blackfired_001.jpg" class="imageBorder"</p>
-		<p class= "text">So what i did first was what and how the player can interact with an object. I decided to create an base <b>Abstract Class</b> that would have</p>
-		<p class= "text">one base function <b>"Interact"</b>, and that would always be activated once a player grabbed/interacted with an interactable,</p>
-		<p class= "text">and would handle whatever what was in the function.</p>
-		<hr>
-		<p></p>
-		<!-- article 3 -->
-		<p class= "text">Even though our game was supposed to be small and compact, we still wanted to make sure that even new players got a hint of where to go.</p>
-		<p class= "text">This came up to be the next challenge, and after a while of brainstorming of how & what, i decided to create a <b>region loading system</b>.</p>
-		<p class= "text">This system would have a function that'd make it so that when the player progressed throughout the level, another region would be loaded,</p>
-		<p class= "text">and the other regions would unload, this was made with the reason so that the player would experience minimal backtracking.</p>
-		<class= "imageBorder"><img src="images/Snippet_Blackfired_002.jpg" class="imageBorder"</p>
-		<p class= "text">If the player were to attempt to backtrack, he would be faced with a fading black screen when he goes out of bounds,</p>
-		<p class= "text">and with the attempt of the player teleporting into a room where he has not yet progress to, he's met with the fact that he cannot go there.</p>
-		<hr>
-		<p></p>
-    <p class= "text"><a href="https://imgur.com/a/5gfNNUb">Picture Gallery</a>||<a href="https://github.com/JoppeStijfDeltion/Project-Periode-8/tree/master/Office%20VR%20Project/Assets/Scenes/Guy/Scripts">My scripts folder</a></p>
+						<p>In this project I had the role of <b>Lead Developer</b>, this whole project was a big <b>Learning Curve</b>, since it was my first VR project.</p>
+						<p>- Player Controller <br>
+						- Puzzles<br>
+						- Interaction<br>
+						- Teleporting<br>
+						- Object & UI + Animations<br>
+						- Implementation<br>
+						- Audio<br>
+						- Tutorial<br>
+						- Ray Interaction</p>
 
+						<h2>Challenges:</h2>
+						<p>Since this was my first ever look at how VR Development works, it took alot of trial and error to figure out the best ways to handle specific things, as it was quite a different stream to follow. There were several things that took some time to make as, example, interactables such as <b>doors and drawers</b>.
+							Basically what I have done for this approach was one big inheritance tree for objects that could be interacted with. In this case I made the template class with several <b>Virtual functions</b>, for the reason that every object you could interact with, would have different functionality, but needed to have the same function called. After the logic behind the approach was clear, the development speed increased. In the end, we had an estimate of <b>8 weeks</b> to complete this assignment.
+						</p>
+						<br>
+						<img src="images/blackfired_002.png" class="leftSmall" width="400px"; top= "200px";/>
+						</br>
+						<h2>Links:</h2>
+						<p><a href="https://imgur.com/a/5gfNNUb">Pictures</a></p>
+						<p><a href="https://github.com/JoppeStijfDeltion/Project-Periode-8/tree/master/Office%20VR%20Project/Assets/Scenes/Guy/Scripts">My script folder</a></p>
 
+						</header>
+					</div>
+				</div>
+			</section>
 
+		<!-- Footer -->
+		<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h4>My socialmedia:</h4>
+							<ul class="plain">
+								<li><a href="https://www.instagram.com/g.u.i.btw/"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="https://github.com/GuyVanDerMeulenDeltion"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+						<section>
+								<h4>Contact Me:</h4>
+								<ul class="plain">
+									<li>Discord: GuyVDM#1010</a></li>
+									<li>E-mail: Guy_meulen@live.nl</a></li>
+								</ul>
+							</section>
+					</div>
+					<div class="copyright">
+						&copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+					</div>
+				</div>
+			</footer>
 
-<!-- Footer -->
-<div class="wrapper row3">
-  <footer id="footer" class="clear">
-    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Guy van der Meulen</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-  </footer>
-</div>
-</body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
